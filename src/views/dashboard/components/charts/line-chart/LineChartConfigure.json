@@ -1,0 +1,68 @@
+{
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "padding": 8
+    },
+    "legend": {
+        "selectedMode": false
+    },
+    "xAxis": {
+        "type": "category",
+        "boundaryGap": false,
+        "axisTick": {
+            "show": false
+        }
+    },
+    "yAxis": {
+        "axisTick": {
+            "show": false
+        }
+    },
+    "grid": {
+        "containLabel": true,
+        "top": 30,
+        "left": 10,
+        "right": 10,
+        "bottom": 20
+    },
+    "dataset": {
+        "source": [
+            ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        ]
+    },
+    "series": [
+        {
+            "name": "expected",
+            "type": "line",
+            "smooth": true,
+            "animationDuration": 2800,
+            "animationEasing": "cubicInOut",
+            "itemStyle": {
+                "color": "#FF005A",
+                "lineStyle": {
+                    "color": "#FF005A",
+                    "width": 2
+                }
+            },
+            "seriesLayoutBy": "row"
+        },
+        {
+            "name": "actual",
+            "type": "line",
+            "smooth": true,
+            "animationDuration": 2800,
+            "animationEasing": "quadraticOut",
+            "itemStyle": {
+                "color": "#3888fa",
+                "lineStyle": {
+                    "color": "#3888fa",
+                    "width": 2
+                }
+            },
+            "seriesLayoutBy": "row"
+        }
+    ]
+}
