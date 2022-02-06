@@ -1,0 +1,17 @@
+:export {
+    name: light;
+    name_ch: 浅色;
+    
+    // color
+    mainCol: #333333;
+
+    // bg
+    loginBg: linear-gradient(145deg, #010832, #5c627c 150%);
+    mainBg: #f2f7ff;
+    loginCenterBg: linear-gradient(145deg, #102a67, #17357d);
+    buttonBg: linear-gradient(90deg, #67f6fe, #0d70ff);
+    sideBg: #1a377c;
+
+    // box-shadow
+    loginCenterShadow: 0 0 40px 0px #123e94;
+}

@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#__base_popup__ {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999999999999;
+}
+
+#app, .__main__ {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --drawer-animate-time: 0.4s
+}
