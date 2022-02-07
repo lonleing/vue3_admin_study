@@ -49,7 +49,7 @@ module.exports = {
             ]
         }
     },
-    configureWebpack () {
+    configureWebpack() {
         return {
             resolve: {
                 alias: {

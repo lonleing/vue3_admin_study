@@ -9,6 +9,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
@@ -22,6 +24,9 @@
       ],
       "@images/*": [
         "src/assets/images/*"
+      ],
+      "@mock/*": [
+        "mock/*"
       ]
     },
     "lib": [
