@@ -1,11 +1,11 @@
-import { Context, Next } from 'koa'
-import mockConfig = require('../src/config/default/mock.config')
-const Koa = require('koa')
-// const KoaRouter = require('koa-router')
-// import addRouter = require('./router')
+// import { Context, Next } from 'koa'
+const addRouter = require('./router')
+// const { port, host } = require('../src/config/default/mock.config')
+// const Koa = require('koa')
+const KoaRouter = require('koa-router')
 
-const app = new Koa()
-// const router = new KoaRouter()
+// const app = new Koa()
+const router = new KoaRouter()
 
 // app.use(async function (ctx: Context, next: Next) {
 //     const start = Date.now()
@@ -17,17 +17,17 @@ const app = new Koa()
 // app.use(async function (ctx: Context) {
 //     ctx.body = 'Hello World'
 // })
-app.use(async function (ctx: Context, next: Next) {
-    ctx.throw(404)
-})
-
-// addRouter(router)
+// app.use(async function (ctx: Context, next: Next) {
+//     ctx.throw(404)
+// })
+addRouter(router)
 // app.use(router.routes())
+// app.use(router.allowedMethods())
 
-app.on('error', function (err: Error) {
-    console.log(err)
-})
+// app.on('error', function (err: Error) {
+//     console.log(err)
+// })
 
-app.listen(mockConfig.port, function () {
-    console.log(`Server running on http://localhost:${mockConfig.port}`)
-})
+// app.listen(port, function () {
+//     console.log(`Server running on http://${host}:${port}`)
+// })
