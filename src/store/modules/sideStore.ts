@@ -1,4 +1,4 @@
-import { isMobileNoRef } from '@/unit/Helper'
+import { isMobileNoRef } from '@/units/helper'
 import BaseModule from './baseModule'
 
 export interface SideState {
