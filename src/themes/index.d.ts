@@ -5,6 +5,7 @@ interface StyleAttrs {
     loginCenterBg: string;
     buttonBg: string;
     loginCenterShadow: string;
+    sideActiveColor: string;
     [x: string]: string;
 }
 
