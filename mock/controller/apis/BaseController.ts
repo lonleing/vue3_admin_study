@@ -1,6 +1,6 @@
 import { Context } from "koa"
 
-const User = require('../../model/userModel')
+const User = require('../../model/UserModel')
 
 interface Rule {
     [x: string]: string
@@ -13,6 +13,8 @@ class BaseController {
         const res = user.where('token', token).get()
         if (res && callback) {
             callback()
+        } else {
+            BaseController.error(ctx, 401, '未登录')
         }
     }
 

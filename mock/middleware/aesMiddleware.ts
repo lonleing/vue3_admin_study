@@ -2,18 +2,19 @@ import { Next } from "koa"
 import { Context } from "vm"
 import { Decrypt, Encrypt } from '../../src/nets/secret'
 
-function decrypt () {
+function decrypt() {
     return async (ctx: Context, next: Next) => {
-        if (ctx.request.body) {
+        if (Object.keys(ctx.request.body).length) {
             const encrypt = ctx.request.body.data
-            const res = JSON.parse(Decrypt(encrypt))
+            const decrypt = Decrypt(encrypt)
+            const res = decrypt === 'undefined' ? null : JSON.parse(decrypt)
             ctx.request.body = res
         }
         await next()
     }
 }
 
-function encrypt () {
+function encrypt() {
     return async (ctx: Context, next: Next) => {
         await next()
         if (ctx.body) {

@@ -2,7 +2,7 @@ const Mock = require('mockjs')
 interface GenerateData {
     [x: string]: any
 }
-module.exports = class BaseModel {
+class BaseModel {
     protected data: GenerateData[] = []
     private random = Mock.Random
 
@@ -16,9 +16,9 @@ module.exports = class BaseModel {
 
     protected where(field: string, prop: string) {
         if (this.data.length) {
-            const queryTerm = [ '=', '!=', '>', '<' ]
+            const queryTerm = ['=', '!=', '>', '<']
             if (queryTerm.includes(prop)) {
-    
+
             } else {
                 this.data = this.data.reduce((newData: GenerateData[], dataItem: GenerateData) => {
                     if (dataItem[field] == prop) {
@@ -45,10 +45,13 @@ module.exports = class BaseModel {
     }
 
     protected get() {
-        return this.data[0]||null
+        return this.data[0] || null
     }
 
-    protected all () {
+    protected all() {
         return this.data
     }
 }
+
+module.exports = BaseModel
+export {}

@@ -1,6 +1,6 @@
 import { Context } from "vm"
 const { prefix, post } = require('../../decorator')
-const User = require('../../model/userModel')
+const User = require('../../model/UserModel')
 const cryptoJS = require('crypto-js')
 const BaseController = require('./BaseController')
 
