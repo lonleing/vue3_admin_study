@@ -17,7 +17,7 @@ class LoginController extends BaseController {
             'password.required': '密码不能为空'
         })
         if (verify) {
-            return LoginController.error(ctx, 417, verify)
+            return LoginController.error(ctx, 400, verify)
         }
 
         const username = ctx.request.body.username
