@@ -1,5 +1,6 @@
 import { App } from "vue"
 export * from './elements/element.icons'
+export * as icons from './elements/element.icons'
 
 export function loadAllPlugins (app: App<Element>) {
     const files = require.context('.', true, /[^.]\/index\.(?:ts|js)$/)

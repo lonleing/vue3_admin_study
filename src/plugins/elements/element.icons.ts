@@ -3,5 +3,6 @@ export {
     Expand,
     Fold,
     ArrowRight,
-    MagicStick
+    MagicStick,
+    HelpFilled
 } from '@element-plus/icons-vue'
