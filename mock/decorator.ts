@@ -5,7 +5,7 @@ function createMethodDecorator(method: string) {
         return (target: any, name: string) => {
             target = target.constructor
             const routeMap = Reflect.getMetadata(ROUTER_MAP, target, 'method') || [];
-            routeMap.push({ method, name, path })
+            routeMap.push({ method, name, path: path||'' })
             Reflect.defineMetadata(ROUTER_MAP, routeMap, target, 'method');
         }
     }
