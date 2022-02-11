@@ -72,33 +72,37 @@ export default {
     BoxCard,
   },
   setup() {
-    const data = {
-      newVisitis: {
-        expectedData: [100, 120, 161, 134, 105, 160, 165],
-        actualData: [5, 82, 91, 154, 162, 140, 145],
-      },
-      messages: {
-        expectedData: [200, 192, 120, 144, 160, 130, 140],
-        actualData: [25, 160, 151, 106, 145, 150, 130],
-      },
-      purchases: {
-        expectedData: [9, 100, 121, 104, 105, 90, 100],
-        actualData: [120, 90, 100, 138, 142, 130, 130],
-      },
-      shoppings: {
-        expectedData: [36, 140, 95, 142, 53, 150, 160],
-        actualData: [120, 82, 91, 154, 162, 140, 130],
-      },
-    }
-    const lineChartData = ref(data.newVisitis)
+    return new Promise((resolve) => {
+      const data = {
+        newVisitis: {
+          expectedData: [100, 120, 161, 134, 105, 160, 165],
+          actualData: [5, 82, 91, 154, 162, 140, 145],
+        },
+        messages: {
+          expectedData: [200, 192, 120, 144, 160, 130, 140],
+          actualData: [25, 160, 151, 106, 145, 150, 130],
+        },
+        purchases: {
+          expectedData: [9, 100, 121, 104, 105, 90, 100],
+          actualData: [120, 90, 100, 138, 142, 130, 130],
+        },
+        shoppings: {
+          expectedData: [36, 140, 95, 142, 53, 150, 160],
+          actualData: [120, 82, 91, 154, 162, 140, 130],
+        },
+      }
+      const lineChartData = ref(data.newVisitis)
 
-    function handleSetLineChartData(id) {
-      lineChartData.value = data[id]
-    }
-    return {
-      lineChartData,
-      handleSetLineChartData,
-    }
+      function handleSetLineChartData(id) {
+        lineChartData.value = data[id]
+      }
+      setTimeout(() => {
+        return resolve({
+          lineChartData,
+          handleSetLineChartData,
+        })
+      }, 3000)
+    })
   },
 }
 </script>
