@@ -20,7 +20,7 @@
 import { getState } from '@/store'
 import { SideState } from '@/store/modules/sideStore'
 import { computed, defineComponent } from 'vue'
-import { isMobile } from '@/unit/Helper'
+import { isMobile } from '@/units/helper'
 export default defineComponent({
     setup () {
         const isCollapse = computed(() => getState<SideState>('sideStore').isCollapse)
