@@ -14,7 +14,10 @@ import {
     ElButton,
     ElProgress,
     ElTimeline,
-    ElTimelineItem
+    ElTimelineItem,
+    ElTag,
+    ElForm,
+    ElFormItem
 } from 'element-plus'
 
 import { App } from 'vue'
@@ -35,6 +38,9 @@ export default function loadComponent (app: App<Element>) {
     app.use(ElProgress)
     app.use(ElTimeline)
     app.use(ElTimelineItem)
+    app.use(ElTag)
+    app.use(ElForm)
+    app.use(ElFormItem)
 }
 
 import './element.css'
