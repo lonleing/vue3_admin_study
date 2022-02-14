@@ -1,4 +1,4 @@
-import { Context } from "koa"
+import { Context, Next } from "koa"
 const ArticleModel = require('../../model/ArticleModel')
 const BaseController = require('./BaseController')
 const { prefix, get } = require('../../decorator')

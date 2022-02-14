@@ -2,6 +2,7 @@ const Mock = require('mockjs')
 interface GenerateData {
     [x: string]: any
 }
+
 class BaseModel {
     protected data: GenerateData[] = []
     private random = Mock.Random
@@ -14,7 +15,7 @@ class BaseModel {
         return this.random.integer(min, max)
     }
 
-    protected randomChar(pool?:string) {
+    protected randomChar(pool?: string) {
         return this.random.character(pool)
     }
 
@@ -31,6 +32,15 @@ class BaseModel {
                     return newData
                 }, [])
             }
+        }
+        return this
+    }
+
+    protected limit(count: number, max?: number) {
+        if (this.data.length) {
+            const min_num = max ? count : 0
+            const max_num = max ? max : count
+            this.data = this.data.slice(min_num, max_num)
         }
         return this
     }
@@ -58,4 +68,4 @@ class BaseModel {
 }
 
 module.exports = BaseModel
-export {}
+export { }

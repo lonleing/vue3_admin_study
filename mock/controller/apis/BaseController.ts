@@ -28,7 +28,6 @@ class BaseController {
     }
 
     protected static error(ctx: Context, code: number, message: string) {
-        ctx.append('access-response-type-api', 'api')
         ctx.body = {
             code,
             message

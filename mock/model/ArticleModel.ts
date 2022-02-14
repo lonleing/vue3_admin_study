@@ -12,6 +12,7 @@ class Article extends BaseModel {
                 'describe|1': '@sentence',
                 'importance|1': [1, 2, 3],
                 'isComment|1': '@boolean',
+                reading: this.randomInt(0, 100),
                 platform: [this.randomChar('abc')],
                 content: '@paragraph',
                 author: '@name',
@@ -25,4 +26,4 @@ class Article extends BaseModel {
 }
 
 module.exports = Article
-export={}
+export { }

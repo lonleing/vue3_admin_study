@@ -17,7 +17,7 @@ function decrypt() {
 function encrypt() {
     return async (ctx: Context, next: Next) => {
         await next()
-        if (ctx.body) {
+        if (ctx.body && ctx.response.header['access-response-type-api']) {
             const word = typeof ctx.body == 'object' ? JSON.stringify(ctx.body) : ctx.body.toString()
             const data = Encrypt(word)
             ctx.body = {
