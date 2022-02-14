@@ -1,4 +1,4 @@
-const BaseModel = require('./baseModel')
+const BaseModel = require('./BaseModel')
 const cryptoJS = require('crypto-js')
 class User extends BaseModel {
 

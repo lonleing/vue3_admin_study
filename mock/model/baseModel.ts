@@ -14,6 +14,10 @@ class BaseModel {
         return this.random.integer(min, max)
     }
 
+    protected randomChar(pool?:string) {
+        return this.random.character(pool)
+    }
+
     protected where(field: string, prop: string) {
         if (this.data.length) {
             const queryTerm = ['=', '!=', '>', '<']
