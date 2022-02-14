@@ -37,5 +37,6 @@ import 'element-plus/theme-chalk/el-date-picker.css'
 import 'element-plus/theme-chalk/el-rate.css'
 import 'element-plus/theme-chalk/el-tabs.css'
 import 'element-plus/theme-chalk/el-tab-pane.css'
+import 'element-plus/theme-chalk/el-alert.css'
 
 // import 'element-plus/dist/index.css'

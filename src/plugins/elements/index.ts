@@ -31,7 +31,8 @@ import {
     ElDatePicker,
     ElRate,
     ElTabs,
-    ElTabPane
+    ElTabPane,
+    ElAlert
 } from 'element-plus'
 
 import { App } from 'vue'
@@ -69,6 +70,7 @@ export default function loadComponent (app: App<Element>) {
     app.use(ElRate)
     app.use(ElTabs)
     app.use(ElTabPane)
+    app.use(ElAlert)
 }
 
 import './element.css'
