@@ -101,7 +101,7 @@ export default {
           lineChartData,
           handleSetLineChartData,
         })
-      }, 3000)
+      }, 500)
     })
   },
 }
