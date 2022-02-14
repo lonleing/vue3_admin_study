@@ -62,6 +62,9 @@ export default defineComponent({
     )
 
     const activeMenu = computed(() => {
+      if (route.meta && route.meta.activeMenu) {
+        return route.meta.activeMenu
+      }
       return route.path
     })
 
@@ -74,7 +77,7 @@ export default defineComponent({
       StyleAttrs,
       activeTextColor,
       routes: asyncRoutes,
-      activeMenu,
+      activeMenu
     }
   },
 })

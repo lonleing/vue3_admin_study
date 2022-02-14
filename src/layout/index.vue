@@ -84,7 +84,7 @@ export default defineComponent({
     left: 0;
     top: 0;
     height: 100%;
-    z-index: 1;
+    z-index: 999999999;
     width: var(--ltr-drawer-container-max-width);
     transition: width var(--drawer-animate-time);
   }
