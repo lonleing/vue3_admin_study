@@ -5,5 +5,6 @@ export {
     ArrowRight,
     MagicStick,
     HelpFilled,
-    CaretBottom
+    CaretBottom,
+    List
 } from '@element-plus/icons-vue'
