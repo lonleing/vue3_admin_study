@@ -21,10 +21,9 @@ axios.defaults.transformResponse = [
         return data
     }
 ]
-
 export const server = axios.create({
     timeout: 7000,
-    baseURL: Http.BaseTestUrl,
+    baseURL: Http.BaseUrl,
     // auth: auth
 })
 
