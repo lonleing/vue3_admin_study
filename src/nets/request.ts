@@ -4,7 +4,7 @@ type Params = {
 }
 
 export const get = (url: string, params?: Params) => {
-    return new Promise<Params>((resolve, reject) => {
+    return new Promise<any>((resolve, reject) => {  // eslint-disable-line
         server.get(url, {
             params: params
         }).then(res => {

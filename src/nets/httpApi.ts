@@ -4,5 +4,5 @@ export const Http = {
     Login: '/login',
     ArticleList: '/article/list',
     ArticleInfo: '/article/info',
-    Tab: '/tab/getTab'
+    Tab: '/tab/getList'
 } 
