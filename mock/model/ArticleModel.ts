@@ -25,3 +25,4 @@ class Article extends BaseModel {
 }
 
 module.exports = Article
+export={}
