@@ -57,7 +57,6 @@ export default defineComponent({
     },
   },
   setup(props) {
-    console.log(props.route.path)
     const onlyOne = computed(() => {
       if (props.route.meta && props.route.meta.onlyOne) {
         return true

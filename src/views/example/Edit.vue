@@ -208,7 +208,6 @@ export default defineComponent({
       await get(Http.ArticleInfo, {
         id: id,
       }).then((res) => {
-          console.log(res)
         data.title = res.title
         data.author = res.author
         data.date = res.date
