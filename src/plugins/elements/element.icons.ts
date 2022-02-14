@@ -4,5 +4,6 @@ export {
     Fold,
     ArrowRight,
     MagicStick,
-    HelpFilled
+    HelpFilled,
+    CaretBottom
 } from '@element-plus/icons-vue'
