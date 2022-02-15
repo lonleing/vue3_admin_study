@@ -5,7 +5,7 @@ import 'element-plus/theme-chalk/el-popper.css'
 
 import 'element-plus/theme-chalk/el-dialog.css'
 import 'element-plus/theme-chalk/el-menu.css'
-import 'element-plus/theme-chalk/el-submenu.css'
+import 'element-plus/theme-chalk/el-sub-menu.css'
 import 'element-plus/theme-chalk/el-menu-item.css'
 import 'element-plus/theme-chalk/el-icon.css'
 import 'element-plus/theme-chalk/el-drawer.css'

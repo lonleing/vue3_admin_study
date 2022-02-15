@@ -20,7 +20,6 @@
       <el-menu-item
         index="/dashboard"
         :route="{ name: 'Dashboard' }"
-        title="route.dashboard"
       >
         <el-icon><odometer /></el-icon>
         <template #title>route.dashboard</template>

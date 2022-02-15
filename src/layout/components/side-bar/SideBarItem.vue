@@ -4,7 +4,6 @@
       v-if="onlyOne"
       :index="resolvePath(route.path)"
       :route="{ name: route.meta.onlyOne ? route.children[0].name : route.name }"
-      :title="route.meta?.title"
     >
       <el-icon v-if="route.meta?.icon"
         ><component :is="route.meta.icon"
